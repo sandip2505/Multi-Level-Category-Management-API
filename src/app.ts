@@ -13,9 +13,6 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/category', categoryRoutes);
 
-// Health check route
-// app.get('/health', (req, res) => {
-//   res.status(200).json({ status: 'ok' });
-// });
+
 
 export default app;

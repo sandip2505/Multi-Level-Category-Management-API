@@ -11,16 +11,8 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
-  "keywords": [
-    "mern",
-    "mongodb",
-    "express",
-    "nodejs",
-    "typescript",
-    "api",
-    "categories"
-  ],
-  "author": "",
+
+  "author": "Sandip Ganava",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",

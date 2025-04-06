@@ -4,7 +4,7 @@ import { authenticate } from '../middlewares/authMiddleware';
 
 const router = Router();
 
-// Apply authentication middleware to all category routes
+// authentication middleware to all category routes
 router.use(authenticate);
 
 router.post('/', categoryController.createCategory);

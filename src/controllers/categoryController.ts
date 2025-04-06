@@ -88,13 +88,13 @@ export const updateCategory = async (req: Request, res: Response): Promise<void>
 
         if (!mongoose.Types.ObjectId.isValid(id)) {
             res.status(400).json({ message: 'Invalid category ID' });
-            return; // <--- add return
+            return; 
         }
 
         const category = await Category.findById(id);
         if (!category) {
             res.status(404).json({ message: 'Category not found' });
-            return; // <--- add return
+            return; 
         }
 
         // Update the category
@@ -155,7 +155,7 @@ export const deleteCategory = async (req: Request, res: Response): Promise<void>
         const category = await Category.findById(id);
         if (!category) {
             res.status(404).json({ message: 'Category not found' });
-            return; // <--- add return
+            return; 
         }
 
         // Get the parent of the category to be deleted
@@ -176,7 +176,6 @@ export const deleteCategory = async (req: Request, res: Response): Promise<void>
             await Category.bulkWrite(bulkOps);
         }
 
-        // Delete the category
         await Category.findByIdAndDelete(id);
 
         res.json({

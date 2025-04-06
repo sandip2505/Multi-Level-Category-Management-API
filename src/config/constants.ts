@@ -1,2 +1,2 @@
-export const JWT_SECRET = process.env.JWT_SECRET || 'your_super_secret_key';
+export const JWT_SECRET = process.env.JWT_SECRET || 'eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTc0MzkyNTQ4OSwiaWF0IjoxNzQzOTI1NDg5fQ.gxryd1ZntXWekWaABAlQYj1YypWZZXMpbcWcIjsWGgI';
 export const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/category-management';
